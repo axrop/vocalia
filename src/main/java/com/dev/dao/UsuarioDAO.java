@@ -10,4 +10,7 @@ public interface UsuarioDAO extends JpaRepository<Usuario, Integer> {
 
 
     Optional<Usuario> findOneByEmail(String email);
+
+    Optional<Usuario> findByUsuario(String usuario);
+
 }
